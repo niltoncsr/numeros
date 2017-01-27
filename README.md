@@ -1,7 +1,11 @@
 # números
 
-A simple collenction of fucntions that helps dealing between brazilian and
-international number formats.
+A simple collection of functions that helps dealing between brazilian and international number formats. It deals with decimals and dot separators and it can be very handy when you have to calculate(then "translate" to international) or present a number(turning into the brazilian standards). [A lot of people in the world use this standard](https://en.wikipedia.org/wiki/Decimal_mark#Countries_using_Arabic_numerals_with_decimal_comma "List of countries"), not only in Brazil 😉.
+
+## "why not using `.toLocaleString()`" you ask
+Because:
+- Cross-browsing 😊
+- It was fun to do it ❤️️
 
 ## To-do
 - Test it with proper tools.
