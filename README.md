@@ -9,6 +9,7 @@ Because:
 
 ## How-to
 `n.toBrazilian(number)` to transform from `123456.789` to `'123.456,789'`
+
 `n.toInternational(number)` to translate from `'123.456,789'` to `123456.789`
 
 ## To-do

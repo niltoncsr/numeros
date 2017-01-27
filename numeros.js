@@ -49,11 +49,11 @@ var n = (function(){
 
 	// Make international numbers standard out of brazilian standard, for computing
 	var toInternational = function(brazilianDecimal) {
-		return brazilianDecimal
+		return Number(brazilianDecimal
 			// Remove the number separation dots
 			.replace(/\./g, '')
 			// Replace the decimal comma for dot
-			.replace(/,/, '.');
+			.replace(/,/, '.'));
 	};
 
 
