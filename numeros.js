@@ -63,3 +63,5 @@ var n = (function(){
 	};
 
 })()
+
+module.exports = n;
