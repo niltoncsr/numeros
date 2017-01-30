@@ -1,0 +1,22 @@
+{
+  "name": "numeros",
+  "version": "1.0.0",
+  "description": "A simple collection of functions that helps dealing between brazilian and international number formats.",
+  "main": "numeros.js",
+  "scripts": {
+    "test": "./node_modules/jasmine/bin/jasmine.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niltoncsr/numeros.git"
+  },
+  "author": "Nilton Cesar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niltoncsr/numeros/issues"
+  },
+  "homepage": "https://github.com/niltoncsr/numeros#readme",
+  "devDependencies": {
+    "jasmine": "^2.5.3"
+  }
+}
