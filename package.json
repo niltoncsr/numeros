@@ -4,7 +4,7 @@
   "description": "A simple collection of functions that helps dealing between brazilian and international number formats.",
   "main": "numeros.js",
   "scripts": {
-    "test": "./node_modules/jasmine/bin/jasmine.js"
+    "test": "./node_modules/jasmine/bin/jasmine.js tests/test.js"
   },
   "repository": {
     "type": "git",
