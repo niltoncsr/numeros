@@ -2,6 +2,8 @@ var n = (function(){
 
 	// Make brazilian numbers standard out of internation standard, for viewing
 	var toBrazilian = function(internationalDecimal) {
+		if(typeof(internationalDecimal) !== 'number')
+			throw new TypeError('The input must be a number.');
 
 		var stringedNumber =
 			// In case the number isn't an actual number
@@ -49,6 +51,9 @@ var n = (function(){
 
 	// Make international numbers standard out of brazilian standard, for computing
 	var toInternational = function(brazilianDecimal) {
+		if(typeof(brazilianDecimal) !== 'string')
+			throw new TypeError('The input must be a string.');
+
 		return Number(brazilianDecimal
 			// Remove the number separation dots
 			.replace(/\./g, '')
@@ -63,3 +68,5 @@ var n = (function(){
 	};
 
 })()
+
+module.exports = n;
