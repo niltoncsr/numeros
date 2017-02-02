@@ -4,7 +4,7 @@ A simple collection of functions that helps dealing between brazilian and intern
 
 ## "why not using `.toLocaleString()`" you ask
 Because:
-- Cross-browsing 😊
+- Cross-browser 😊
 - It was fun to do it ❤️️
 
 ## How-to
@@ -13,4 +13,4 @@ Because:
 `n.toInternational(number)` to translate from `'123.456,789'` to `123456.789`
 
 ## To-do
-- Test it with proper tools.
+- [x] Test it with proper tools.

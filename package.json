@@ -4,7 +4,8 @@
   "description": "A simple collection of functions that helps dealing between brazilian and international number formats.",
   "main": "numeros.js",
   "scripts": {
-    "test": "./node_modules/jasmine/bin/jasmine.js tests/test.js"
+    "test": "./node_modules/jasmine/bin/jasmine.js tests/test.js",
+    "build": "./node_modules/webpack/bin/webpack.js --optimize-minimize"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,9 @@
   },
   "homepage": "https://github.com/niltoncsr/numeros#readme",
   "devDependencies": {
-    "jasmine": "^2.5.3"
+    "eslint": "^3.14.1",
+    "eslint-loader": "^1.6.1",
+    "jasmine": "^2.5.3",
+    "webpack": "^2.2.1"
   }
 }

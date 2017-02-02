@@ -23,7 +23,7 @@ var n = (function(){
 				) {
 
 				// Control variable to indicate loop stage
-				i++
+				i++;
 
 				// Summing up the next three digits block
 				dottedIntegerPart = integerPart.slice(integerPart.length-(i*3),integerPart.length-(j*3)) + dottedIntegerPart;
@@ -31,18 +31,18 @@ var n = (function(){
 				// When it's the last iteration, break the loop
 				if((integerPart.length)-(i*3) === 0) break;
 				// If it isn't the last iteration, put a dot behind the last added digits
-				else dottedIntegerPart = '.' + dottedIntegerPart
+				else dottedIntegerPart = '.' + dottedIntegerPart;
 
 				// Control variable to keep state of the previous iteration
-				j++
+				j++;
 			}
 
 			// If integer length isn't multiple of three, add to its start the missing
 			if(integerPart.length/3 !== 0)
-				dottedIntegerPart = integerPart.slice(0, integerPart.length%3) + dottedIntegerPart
+				dottedIntegerPart = integerPart.slice(0, integerPart.length%3) + dottedIntegerPart;
 
 			// Return the integer part + comma and decimal part
-			return dottedIntegerPart + stringedNumber.slice(stringedNumber.search(','))
+			return dottedIntegerPart + stringedNumber.slice(stringedNumber.search(','));
 		}
 
 		return stringedNumber;
@@ -67,6 +67,6 @@ var n = (function(){
 		toInternational: toInternational
 	};
 
-})()
+})();
 
 module.exports = n;
