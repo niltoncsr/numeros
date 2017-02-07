@@ -1,4 +1,4 @@
-var n = require('../numeros.js')
+var n = require('../src/numeros.js')
 
 describe('Transform numbers between standards', function() {
 	it('Transform from international to brazilian', function() {
