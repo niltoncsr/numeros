@@ -1,4 +1,14 @@
-var n = (function(){
+;(function(root, factory) {
+
+  if(typeof define === 'function' && define.amd)
+		define('n', factory);
+
+  else if(typeof exports === 'object')
+		module.exports = factory();
+
+  else root.n = factory();
+
+})(this, function() {
 
 	// Make brazilian numbers standard out of internation standard, for viewing
 	var toBrazilian = function(internationalDecimal) {
@@ -67,6 +77,4 @@ var n = (function(){
 		toInternational: toInternational
 	};
 
-})();
-
-module.exports = n;
+});
