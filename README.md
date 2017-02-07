@@ -14,3 +14,5 @@ Because:
 
 ## To-do
 - [x] Test it with proper tools.
+- [ ] Add support for negative numbers.
+- [ ] Expand limitation imposed [natively](http://ecma262-5.com/ELS5_HTML.htm#Section_8.5).
